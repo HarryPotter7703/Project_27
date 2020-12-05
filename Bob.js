@@ -4,7 +4,8 @@ class Bob{
     this.y = y
     var options ={
       isStatic: false,
-      restitution: 0.9
+      restitution: 1.0,
+      friction:0.01
    }
     this.body = Bodies.circle(x, y, 25, options);
     this.radius = 50;

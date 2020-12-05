@@ -17,11 +17,11 @@ function setup() {
 	world = engine.world;
 
 	roof = new Roof(375, 100,250, 20);
-	bobObject1 = new Bob(275, 300);
-	bobObject2 = new Bob(325, 300);
-	bobObject3 = new Bob(375, 300);
-	bobObject4 = new Bob(425, 300);
-	bobObject5 = new Bob(475, 300);
+	bobObject1 = new Bob(275, 500);
+	bobObject2 = new Bob(325, 500);
+	bobObject3 = new Bob(375, 500);
+	bobObject4 = new Bob(425, 500);
+	bobObject5 = new Bob(475, 500);
 	rope1 = new Rope(bobObject1.body, roof.body, -bobDiameter*2, 0);
 	rope2 = new Rope(bobObject2.body, roof.body, -bobDiameter*1, 0);
 	rope3 = new Rope(bobObject3.body, roof.body, bobDiameter*0, 0);
@@ -66,7 +66,7 @@ function draw() {
 }
 function keyPressed(){
 	if(keyCode === UP_ARROW)
-	{	Matter.Body.applyForce(bobObject1.body, bobObject1.body.position,{x:55, y:-15});	}
+	{	Matter.Body.applyForce(bobObject1.body, bobObject1.body.position,{x:65, y:-15});	}
 	
 }
 
