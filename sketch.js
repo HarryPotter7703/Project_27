@@ -5,10 +5,8 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint = Matter.Constraint;
 var roof, rope1, rope2, rope3, rope4, rope5, bobObject1, bobObject2, bobObject3, bobObject4, bobObject5;
-function preload()
-{
-	
-}
+
+var gameState = "ready";
 
 function setup() {
 	createCanvas(800, 700);
@@ -53,6 +51,13 @@ function draw() {
 	bobObject4.display();
 	bobObject5.display();
 	
+	if(gameState === "ready"){
+		textStyle("bold");
+		textSize(34);
+		fill(200, 200,0);
+		text("Press the up arrow key",200, 50);
+		text("To defy gravity", 250, 550)
+	}
 	
 	
 	roof.display();
